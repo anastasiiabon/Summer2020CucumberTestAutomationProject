@@ -6,7 +6,7 @@ Feature: As user I want to be able to login under different roles
   Background: common steps
     Given user is on the login page
 
-  @smoke
+     @smoke
   Scenario: Login as a sales manger
     When user logs in
     Then user should see dashboard page
@@ -65,3 +65,7 @@ Feature: As user I want to be able to login under different roles
       | wrong213 | bad      | Invalid user name or password. |
       | wrong32  | bad      | Invalid user name or password. |
       | wrong12  | bad      | Invalid user name or password. |
+
+
+
+
