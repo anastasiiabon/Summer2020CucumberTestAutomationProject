@@ -29,7 +29,7 @@ public abstract class BasePage {
         return pageSubTitle.getText();
     }
 
-    /**
+    /*
      * Method for navigation in vytrack app
      *
      * @param tab     , for example: Fleet, Dashboard, Sales, Activities..

@@ -8,7 +8,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import java.util.concurrent.TimeUnit;
 
-/**
+/*
  * Hooks name is not reserved. You may name this class in any way.
  * For example: SuiteSetupAndTearDown
  * Hooks triggered based on tags not class name or their location.
@@ -30,7 +30,7 @@ public class Hooks {
     }
 //    this hook will run only before scenarios with a tag @db
 
-    /**
+    /*
      * @db Scenario: I don't know but here I'm connecting to DB
      * Given user runs following query "SELECT * ...."
      * <p>

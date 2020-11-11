@@ -14,7 +14,7 @@ public class CreateCarStepDefinitions {
         createCarPage.clickOnCreateCar();
     }
 
-    /**
+    /*
      * When user adds new vehicle information
      * | License Plate | SDET |
      * | Model Year    | 2021 |

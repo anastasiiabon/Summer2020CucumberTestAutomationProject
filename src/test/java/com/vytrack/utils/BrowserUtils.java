@@ -39,7 +39,7 @@ public class BrowserUtils {
         System.out.println("Entering text: " + text);
     }
 
-    /**
+    /*
      * For instance, selenium webdriver is trying to enter the text:
      * Expected text input  actual text input
      *

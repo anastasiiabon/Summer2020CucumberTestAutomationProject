@@ -32,7 +32,7 @@ public class CreateCarPage extends BasePage {
         BrowserUtils.enterText(modelYearInputBox, modelYear);
     }
 
-    /**
+    /*
      * sometimes, for very longs string webdriver might enter text not fully.
      */
 }
