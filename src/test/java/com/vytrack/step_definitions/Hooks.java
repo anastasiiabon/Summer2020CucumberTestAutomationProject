@@ -6,8 +6,6 @@ import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-
-import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -43,7 +41,6 @@ public class Hooks {
         System.out.println("::: Connecting to the database:::");
     }
 
-
     @After("@db")
     public void dbTearDown() {
         System.out.println("::: Disconnecting from the database:::");
@@ -54,8 +51,8 @@ public class Hooks {
         //close browser, close DB connection, close tunnel,capture screenshot of the error, etc..
         //this is a hook after
         //runs automatically after every test
-        if (scenario.isFailed()){
-            byte[] data = ((TakesScreenshot)Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
+        if (scenario.isFailed()) {
+            byte[] data = ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
             scenario.attach(data, "image/png", scenario.getName());
         }
 
