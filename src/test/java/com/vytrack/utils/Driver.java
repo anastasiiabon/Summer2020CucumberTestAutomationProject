@@ -21,7 +21,7 @@ public class Driver {
             String browser = ConfigurationReader.getProperty("browser");
 //            jenkins command: test -Dcucumber.filter.tags="@smoke" -Dbrowser="chrome"
 //            custom environment variables: -Dbrowser
-//            -Dproperty  = then read in java System.getProperty("property")
+//            -Dpropertyy  = then read in java System.getProperty("property")
 //            if env variable was specified
             if (System.getProperty("browser") != null) {
 //                then change browser type
