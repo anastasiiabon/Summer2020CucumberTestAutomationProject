@@ -11,10 +11,10 @@ import org.junit.runner.RunWith;
                 "rerun:target/rerun.txt",
                 "json:target/cucumber.json"
         },
-        features = "src/test/resources/features",
+        features = {"src/test/resources/features"},
         glue = "com/vytrack/step_definitions",
         dryRun = false,
-        tags = "@negative_login",
+        tags = "",
         publish = true
 )
 public class CucumberRunner {
