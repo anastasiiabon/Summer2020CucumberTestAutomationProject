@@ -5,8 +5,6 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import java.util.Scanner;
-
 public class LoginPage extends BasePage {
 
     //To not use web elements directly in step definition classes
@@ -32,7 +30,6 @@ public class LoginPage extends BasePage {
     public void login(String usernameValue, String passwordValue) {
         username.sendKeys(usernameValue);
         password.sendKeys(passwordValue, Keys.ENTER);
-
     }
 
     public void login() {
